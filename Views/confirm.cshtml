@@ -1,8 +1,13 @@
-<h1>You've added a new Place Visited</h1>
-<ul>
-  @foreach(var newPlace in @Model)
-  {
-    <li><a href="/place/@newPlace.GetId()">@newPlace.GetCountry()</a></li>
-  }
-</ul>
-<p><a href="/form/new">Add another Place Visited</a></p>
+@{
+  Layout="Shared/_Layout.cshtml";
+}
+<div class="container">
+  <h1>You've added a new Place Visited</h1>
+  <ul>
+    @foreach(var newPlace in @Model)
+    {
+      <li><a href="/place/@newPlace.GetId()">@newPlace.GetCountry()</a></li>
+    }
+  </ul>
+  <p><a href="/form/new">Add another Place Visited</a></p>
+</div>

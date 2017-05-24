@@ -1,14 +1,25 @@
-<h1>Add Places</h1>
-<form action="/confirm" method="post">
-  <label for="country">Country</label>
-  <input type="text" name="country" id="country">
-  <label for="city">City</label>
-  <input type="text" name="city" id="city">
-  <label for="image">Image</label>
-  <input type="text" name="image" id="image">
-  <label for="dates">Dates</label>
-  <input type="text" name="dates" id="dates">
-  <label for="description">Description</label>
-  <input type="text" name="description" id="description">
-  <button type="submit" name="button">Submit</button>
-</form>
+@{
+  Layout="Shared/_Layout.cshtml";
+}
+<div class="container">
+  <h1>Add Places</h1>
+  <form action="/confirm" method="post">
+    <label for="country">Country</label>
+    <input type="text" name="country" id="country">
+    <br>
+    <label for="city">City</label>
+    <input type="text" name="city" id="city">
+    <br>
+    <label for="image">Image</label>
+    <input type="text" name="image" id="image">
+    <br>
+    <label for="dates">Dates</label>
+    <input type="text" name="dates" id="dates">
+    <br>
+    <label for="description">Description</label>
+    <input type="text" name="description" id="description">
+    <br>
+    <button type="submit" name="button">Submit</button>
+  </form>
+
+</div>
